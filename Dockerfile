@@ -12,4 +12,5 @@ RUN curl -sfL -o docker.tgz "https://download.docker.com/linux/static/stable/x86
   tar -xzf docker.tgz docker/docker --strip=1 --directory /usr/local/bin && \
   rm docker.tgz
 RUN trivy i httpd
+EXPOSE 3005
 CMD ["node", "server.js"]
