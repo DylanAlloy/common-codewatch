@@ -1,6 +1,6 @@
 {
     "db": {
-        "url": "<mongo string>"
+        "url": "host.docker.internal:27017"
     }
     , "servicePort": "3005"
 }
